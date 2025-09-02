@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Horse Race Ready</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#0b1220;color:#e7ecff}
+    .wrap{max-width:880px;margin:auto;padding:48px 20px}
+    .hero{display:flex;gap:24px;align-items:center}
+    .hero h1{font-size:44px;margin:0 0 8px}
+    .card{background:#121a2b;border:1px solid #223256;border-radius:14px;padding:24px}
+    a.btn{display:inline-block;background:#4f7cff;color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.btn.secondary{background:#223256}
+    footer{opacity:.8;margin-top:40px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero card">
+      <div>
+        <h1>Horse Race Ready</h1>
+        <p>Handicapping helper powered by AI. Paste a single race’s BRIS PPs and get a concise pace & value analysis.</p>
+        <!-- TODO: replace the URL below with your Streamlit app URL -->
+        <p>
+          <a class="btn" href="https://share.streamlit.io/your-user/your-app/main/app.py" target="_blank" rel="noopener">Open the App</a>
+          <a class="btn secondary" href="https://github.com/craigstephens859-prog/Horse-Race-Ready/blob/main/PRIVACY.md" target="_blank">Privacy</a>
+          <a class="btn secondary" href="https://github.com/craigstephens859-prog/Horse-Race-Ready/blob/main/TERMS.md" target="_blank">Terms</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Disclaimer: Informational use only—no financial or wagering advice. © <span id="y"></span> Horse Race Ready.</p>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
